@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* VARIABLES */
+:root {
+  --black: #111010;
+  --dark-purple: #371E30;
+  --sky-magenta: #B37BA4;
+  --gray: #cbc4a1;
+}
+
+
+/* LINKS */
+a {
+  text-decoration: none;
+  color: var( --black );
+} 
+
+a:hover {
+  color: var( --sky-magenta );
+}
+
+
+/* TABLE */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  color: var( --dark-purple );
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid var( --black );
+}
+
+
+/* FORMS */
+input[type=text] {
+  width: 50%;
+  padding: 10px 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid var( --gray );
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[ type=text ]:focus {
+  border: 3px solid var( --sky-magenta );
+}
+
+textarea {
+  width: 80%;
+  height: 50px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border: 2px solid var( --gray );
+  border-radius: 4px;
+  outline: none;
+  resize: none;
+}
+textarea:focus {
+  border: 3px solid var( --sky-magenta );
+}
+
+input[ type=submit ] {
+  background-color: var( --sky-magenta );
+  border: none;
+  border-radius: 4px;
+  color: var( --black );
+  text-decoration: none;
+  padding: 16px 32px;
+  margin: 4px 2px;
+  float: right;
+}
+
+
+/* DIVS */
+div {
+  width: 70%;
+}
+
+/* BODY */
+body {
+  padding: 50px;
+  font: 14px "Roboto";
+}

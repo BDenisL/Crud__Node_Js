@@ -1,0 +1,12 @@
+<div>
+{{#each object}}
+<form action="/objects/confirmModification" method="post">
+Input new Item s name: 
+<input type="text" name="name"><br>
+Input new description: <br>
+<textarea name="description"></textarea>
+<input type="hidden" name="code" value="{{code}}"><br>
+<input type="submit" value="modify">
+</form>
+{{/each}}
+</div>
